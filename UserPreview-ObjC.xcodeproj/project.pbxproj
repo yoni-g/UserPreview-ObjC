@@ -91,6 +91,8 @@
 				F0AFEE3B24F59B9E00268E2E /* Controllers */,
 				F0AFEE1424F5981E00268E2E /* AppDelegate.h */,
 				F0AFEE1524F5981E00268E2E /* AppDelegate.m */,
+				F0AFEE1A24F5981E00268E2E /* ViewController.h */,
+				F0AFEE1B24F5981E00268E2E /* ViewController.m */,
 				F0AFEE1724F5981E00268E2E /* SceneDelegate.h */,
 				F0AFEE1824F5981E00268E2E /* SceneDelegate.m */,
 				F0AFEE1D24F5981E00268E2E /* Main.storyboard */,
@@ -114,8 +116,6 @@
 		F0AFEE3B24F59B9E00268E2E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F0AFEE1A24F5981E00268E2E /* ViewController.h */,
-				F0AFEE1B24F5981E00268E2E /* ViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
