@@ -15,6 +15,7 @@
 		F0AFEE2424F5982100268E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AFEE2224F5982100268E2E /* LaunchScreen.storyboard */; };
 		F0AFEE2724F5982100268E2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFEE2624F5982100268E2E /* main.m */; };
 		F0AFEE3124F5982100268E2E /* UserPreview_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFEE3024F5982100268E2E /* UserPreview_ObjCTests.m */; };
+		F0AFEE3E24F59BFA00268E2E /* WebServiceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFEE3D24F59BFA00268E2E /* WebServiceUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		F0AFEE2C24F5982100268E2E /* UserPreview-ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserPreview-ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AFEE3024F5982100268E2E /* UserPreview_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPreview_ObjCTests.m; sourceTree = "<group>"; };
 		F0AFEE3224F5982100268E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0AFEE3D24F59BFA00268E2E /* WebServiceUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServiceUtils.m; sourceTree = "<group>"; };
+		F0AFEE3F24F59C1000268E2E /* WebServiceUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServiceUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +87,12 @@
 		F0AFEE1324F5981E00268E2E /* UserPreview-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				F0AFEE3C24F59BAC00268E2E /* WebService */,
+				F0AFEE3B24F59B9E00268E2E /* Controllers */,
 				F0AFEE1424F5981E00268E2E /* AppDelegate.h */,
 				F0AFEE1524F5981E00268E2E /* AppDelegate.m */,
 				F0AFEE1724F5981E00268E2E /* SceneDelegate.h */,
 				F0AFEE1824F5981E00268E2E /* SceneDelegate.m */,
-				F0AFEE1A24F5981E00268E2E /* ViewController.h */,
-				F0AFEE1B24F5981E00268E2E /* ViewController.m */,
 				F0AFEE1D24F5981E00268E2E /* Main.storyboard */,
 				F0AFEE2024F5982100268E2E /* Assets.xcassets */,
 				F0AFEE2224F5982100268E2E /* LaunchScreen.storyboard */,
@@ -106,6 +109,24 @@
 				F0AFEE3224F5982100268E2E /* Info.plist */,
 			);
 			path = "UserPreview-ObjCTests";
+			sourceTree = "<group>";
+		};
+		F0AFEE3B24F59B9E00268E2E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0AFEE1A24F5981E00268E2E /* ViewController.h */,
+				F0AFEE1B24F5981E00268E2E /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0AFEE3C24F59BAC00268E2E /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				F0AFEE3D24F59BFA00268E2E /* WebServiceUtils.m */,
+				F0AFEE3F24F59C1000268E2E /* WebServiceUtils.h */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AFEE1C24F5981E00268E2E /* ViewController.m in Sources */,
+				F0AFEE3E24F59BFA00268E2E /* WebServiceUtils.m in Sources */,
 				F0AFEE1624F5981E00268E2E /* AppDelegate.m in Sources */,
 				F0AFEE2724F5982100268E2E /* main.m in Sources */,
 				F0AFEE1924F5981E00268E2E /* SceneDelegate.m in Sources */,
