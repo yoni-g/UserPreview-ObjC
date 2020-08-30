@@ -22,17 +22,23 @@
     [_usersCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"userCell"];
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section{
     return _userArr.count;
 }
 
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                           cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"userCell" forIndexPath:indexPath];
     
     UILabel *label = [UILabel alloc];
-    label.text = [self.userArr objectAtIndex:indexPath.row];
+    NSString *userName = [self.userArr objectAtIndex:indexPath.row];
+    label.text = userName;
+    label.backgroundColor = [UIColor whiteColor];
+    NSLog(@"%@", userName);
     [cell.backgroundView addSubview:label];
     cell.backgroundColor = [UIColor systemTealColor];
+    
     return cell;
 }
 
